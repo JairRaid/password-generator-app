@@ -128,6 +128,9 @@ function checkLevelState() {
     for (const state of Object.values(levelStates)) {
         if (passLevel === state.level && passLength > 3) {
             passStrength = state.state.toUpperCase();
+            if (passStrength === "TOO WEAK") {
+                passStrength += "!";
+            }
         }
     }
     if (!passLevel && passLength < 4)
@@ -145,7 +148,7 @@ function strengthText() {
 
 function updateStrengthDOMLevel() {
     const rectEl = levelEl.children;
-    const classColor = passStrength === "TOO WEAK" ? "too-weak" : passStrength;
+    const classColor = passStrength === "TOO WEAK!" ? "too-weak" : passStrength;
     let i = 0;
 
     if (passStrength && passLength > 3) {
