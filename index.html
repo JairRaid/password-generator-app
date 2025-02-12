@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Password generator app</title>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+
+        <section class="generated-password">
+            <p id="pass">P4$5W0rD!</p>
+            <span id="copied">COPIED</span>
+            <img src="./assets/images/icon-copy.svg" alt="copy icon" id="copy">
+        </section>
+
+        <div class="pass-type-container">
+            <section class="character-types">
+                <label>
+                    <div class="length-wrapper">
+                        <p>Character Length</p>
+                        <span id="length-value">10</span>
+                    </div>
+                    <input type="range" id="character-length" value="0" min="0" max="20">
+                </label>
+
+                <label><input type="checkbox" name="uppercase">Include Uppercase Letters</label><br>
+                <label><input type="checkbox" name="lowercase">Include Lowercase Letters</label><br>
+                <label><input type="checkbox" name="numbers">Include Numbers</label><br>
+                <label><input type="checkbox" name="symbols">Include Symbols</label>
+            </section>
+
+            <section class="pass-strength">
+                <p class="strength-text">STRENGHT</p>
+                <div class="strenght-level">
+                    <p class="level-text">MEDIUM</p>
+                    <div class="level">
+                        <div class="rect"></div>
+                        <div class="rect"></div>
+                        <div class="rect"></div>
+                        <div class="rect"></div>
+                    </div>
+                </div>
+            </section>
+
+            <button id="generate">GENERATE<img src="./assets/images/icon-arrow-right.svg" alt="arrow right"></button>
+        </div>
+    </main>
+    <script src="./js/range.js"></script>
+    <script src="index.js"></script>
+</body></html>
