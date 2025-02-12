@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/JairRaid/password-generator-app
+- Live Site URL: https://jairraid.github.io/password-generator-app/
 
 ## My process
 
