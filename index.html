@@ -22,7 +22,7 @@
         <section class="generated-password">
             <p id="pass">P4$5W0rD!</p>
             <span id="copied">COPIED</span>
-            <img src="./assets/images/icon-copy.svg" alt="copy icon" id="copy">
+            <img src="./assets/images/icon-copy.svg" alt="Copy password to clipboard" id="copy">
         </section>
 
         <div class="pass-type-container">
@@ -35,10 +35,10 @@
                     <input type="range" id="character-length" value="0" min="0" max="20">
                 </label>
 
-                <label><input type="checkbox" name="uppercase">Include Uppercase Letters</label><br>
-                <label><input type="checkbox" name="lowercase">Include Lowercase Letters</label><br>
-                <label><input type="checkbox" name="numbers">Include Numbers</label><br>
-                <label><input type="checkbox" name="symbols">Include Symbols</label>
+                <label for="uppercase"><input type="checkbox" name="uppercase">Include Uppercase Letters</label><br>
+                <label for="lowercase"><input type="checkbox" name="lowercase">Include Lowercase Letters</label><br>
+                <label for="numbers"><input type="checkbox" name="numbers">Include Numbers</label><br>
+                <label for="symbols"><input type="checkbox" name="symbols">Include Symbols</label>
             </section>
 
             <section class="pass-strength">
@@ -54,7 +54,7 @@
                 </div>
             </section>
 
-            <button id="generate">GENERATE<img src="./assets/images/icon-arrow-right.svg" alt="arrow right"></button>
+            <button id="generate">GENERATE<img src="./assets/images/icon-arrow-right.svg" alt="Generate password"></button>
         </div>
     </main>
     <script src="./js/range.js"></script>
